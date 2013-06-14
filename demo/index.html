@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<title>jquery.sc.ticker.js DEMO</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script src="../jquery.sc.ticker.js"></script>
+</head>
+<body>
+	<div class="outside">
+		<ul id="ticker">
+			<li>ticker1ticker1ticker1</li>
+			<li>ticker2ticker2ticker2</li>
+			<li>ticker3ticker3ticker3</li>
+		</ul>
+	</div>
+<script>
+$(function(){
+	var options = {
+		'speed':	2000,
+		'duration':	600,
+		'delay':	1000
+	}
+	$('#ticker').scTicker(options);
+});
+</script>
+</body>
+</html>
